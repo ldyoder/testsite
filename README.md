@@ -1,37 +1,85 @@
-## Welcome to GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/ldyoder/testsite/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Fun With Tables</title>
+<meta charset="utf-8">
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+<style>
+table	{margin: auto;
+	width: 200px;}
 
-### Markdown
+thead	{background-color: #eaeaea;}
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+tbody	{font-family: Arial, sans-serif;
+	 font-size: .90em;}
 
-```markdown
-Syntax highlighted code block
+tbody td {border-bottom: 1px #000033 dashed;
+	  padding-left: 25px;}
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
+caption {font-size: 2em;
+         font-weight: bold;}
 
-1. Numbered
-2. List
+tfoot	{background-color: #eaeaea;
+	 font-weight: bold;
+	 text-align: center;}
 
-**Bold** and _Italic_ and `Code` text
+#day	{font-weight: bold;}
 
-[Link](url) and ![Image](src)
-```
+#hours	{font-weight: bold;}
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+</style>
 
-### Jekyll Themes
+</head>
+<body>
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/ldyoder/testsite/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
-### Support or Contact
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+
+<h6>Page 343 - Figure 8.12</h6>
+
+<table>
+<caption>Time Sheet</caption>
+<thead>
+<tr>
+	<th id="day">Day</th>
+	<th id="hours">Hours</th>
+</tr>
+</thead>
+<tbody>
+
+<tr>
+	<td headers="day">Monday</td>
+	<td headers="hours">4</td>
+</tr>
+<tr>
+	<td headers="day">Tuesday</td>
+	<td headers="hours">3</td>
+</tr>
+
+<tr>
+	<td headers="day">Wednesday</td>
+	<td headers="hours">5</td>
+</td>
+</tr>
+<tr>
+	<td headers="day">Thursday</td>
+	<td headers="hours">3</td>
+</tr>
+<tr>
+	<td headers="day">Friday</td>
+	<td headers="hours">3</td>
+</tr>
+
+</tbody>
+<tfoot>
+<tr>
+	<td headers="day">Total</td>
+	<td headers="hours">18</td>
+</tr>
+</tfoot>
+</table>
+
+</body>
+</html>
